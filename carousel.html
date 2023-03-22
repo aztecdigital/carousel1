@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Carousel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+    .owl-carousel .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      max-width: 40%;
+      max-height: 50px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="owl-carousel owl-theme">
+    <div class="item"><img src="https://drive.google.com/uc?export=view&id=1ixil-T56gXFWgKq_UKY0eOmooR6PNoh-" alt="Logo 1"></div>
+    <div class="item"><img src="https://drive.google.com/uc?export=view&id=1lxy5gVuKsg4xIWHlOBgW21f745vwAdGC" alt="Logo 2"></div>
+    <div class="item"><img src="https://drive.google.com/uc?export=view&id=1gwdBe3wf7wxkBCDBj_Rlusac-zgTH_-x" alt="Logo 3"></div>
+    <div class="item"><img src="https://drive.google.com/uc?export=view&id=1WEGK0g3PH95GDx2YCgFbxHsEVJxoSn6m" alt="Logo 4"></div>
+    <div class="item"><img src="https://drive.google.com/uc?export=view&id=1PHJ3iMtXoTRJ8oh15Iz6y5-v-7jipvdg" alt="Logo 5"></div>
+    <div class="item"><img src="https://drive.google.com/uc?export=view&id=1TUDsfQDtkK55c2WDd_8MZV1Dt_lcGngB" alt="Logo 6"></div>
+    <div class="item"><img src="https://drive.google.com/uc?export=view&id=1ocZ23eB2hHHNTaFxC2h126BnV3qhIGUD" alt="Logo 7"></div>
+    <div class="item"><img src="https://drive.google.com/uc?export=view&id=1Uvrs49fYpnEpVMfiFMOwHSzzeamJUf7x" alt="Logo 8"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:1,
+        nav:true,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:3
+          },
+          1000:{
+            items:5
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
